@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col s4">
-          <a href="#"><img src="" alt="Project Logo" /></a>
+          <a href="#"><img src="../assets/nvna_logo.jpg" style="border-radius: 50%;" width="70" height="70" alt="Project Logo" /></a>
           <h5 class="white-text">Contact</h5>
           <p>+855 123 456 789</p>
           <p>tvna19@kit.edu.kh</p>
@@ -23,6 +23,7 @@
             </li>
           </ul>
         </div>
+            
         <div class="col s4">
           <div class="row">
             <br />
@@ -55,6 +56,12 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
 <style>
 .page-footer {
   background-color: #00c689;
