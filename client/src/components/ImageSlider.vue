@@ -18,7 +18,7 @@
      <v-carousel-item
     >
       <v-img
-        :src="require('../assets/lory.jpg')"
+        :src="require('../assets/Koh Ker.png')"
         height="700"
         class="grey darken-4 ">
       </v-img>
