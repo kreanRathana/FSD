@@ -5,6 +5,7 @@
     <ImageSlide/>
     <Footer/>
     <FooterWeb/>
+    <contentLayout/>
 
   </v-app>
 </template>
@@ -15,6 +16,7 @@ import Footer from './components/Footer'
 import ImageSlide from './components/ImageSlider';
 import Navbar from './components/Navbar'
 import CategoryPlace from './components/CategoriesPlace'
+import contentLayout from './components/contentLayout'
 export default {
   name: 'App',
 
@@ -23,7 +25,8 @@ export default {
     ImageSlide,
     Navbar,
     Footer,
-    CategoryPlace
+    CategoryPlace,
+    contentLayout
   },
 
   data: () => ({
