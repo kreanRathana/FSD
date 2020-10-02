@@ -29,7 +29,8 @@
                     </div>
                     <span>
                       {{i.description}} 
-                      ...<a href="" @click="MoreDetail"> See all</a>
+                      ...<a href=""> <router-link :to="{ name: 'detaillayout',params: { moreDetail: i}}">See all</router-link></a>
+                      
                       </span>  
                    
                   </v-container>
@@ -95,8 +96,10 @@ export default {
         console.log(this.myDate)
         this.myDate = this.myDate.users
         this.myDate.filter((x)=>{
+          x.full_desc = x.description;
+          // console.log(x.full_desc)
           x.description = x.description.slice(0,410)
-          console.log(x.description.length)
+
         })
       })
       .catch((err)=>{

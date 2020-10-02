@@ -1,14 +1,14 @@
 <template>
   <div>
-    <v-app-bar app color="#3B506F" dark height="80">
+    <v-app-bar app color="#51ADCF" dark height="80">
       <div class="d-flex align-center" style="margin-right: 50px">
         <v-avatar class="profile ml-12 " size="100">
           <a href="#">
             <v-img
-              class="shrink mt-4"
+              class="shrink ml-12"
               src="../assets/Logo.png"
               transition="scale-transition"
-              width="130"
+              width="100"
             >
             </v-img>
           </a>
