@@ -51,26 +51,25 @@
           </v-col>
          </v-row>
       </v-container>
-      <Footer/>
+      <!-- <Footer/> -->
   </v-app>
 </template>
 
 <script>
 import Navbar from '../components/Navbar'
-import Footer from '../components/WebFooter'
+// import Footer from '../components/WebFooter'
 import axios from "axios";
 export default {
   data() {
       return {
         myInfor:{name:'daro',age:'43'},
-        imgPath:'http://localhost:4000/public/daro.jpg',
         myDate:[],
         files: null
       };
     },
      components:{
        Navbar,
-       Footer
+      //  Footer
     },
     methods: {
         uploadFile (event) {
@@ -81,7 +80,7 @@ export default {
           for (const i of Object.keys(this.files)) {
             formData.append('files', this.files[i])
           }
-          axios.post('http://localhost:4000/api/file-upload', formData, {}).then((res) => {
+          axios.post('api/file-upload', formData, {}).then((res) => {
             console.log(res)
           })
         },
@@ -90,7 +89,7 @@ export default {
         }  
     },
     mounted(){
-      axios.get('http://localhost:4000/api')
+      axios.get('api')
       .then((res)=>{
         this.myDate = res.data
         console.log(this.myDate)
