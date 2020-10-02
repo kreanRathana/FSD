@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <CategoryPlace/>
+    <h1>Hello </h1>
+    <!-- <CategoryPlace/>
     <Navbar/>
     <ImageSlide/>
-    <Footer/>
     <FooterWeb/>
-    <contentLayout/>
-
   </v-app>
 </template>
 
