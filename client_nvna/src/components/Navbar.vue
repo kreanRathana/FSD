@@ -50,14 +50,14 @@
       <v-btn outlined class="ml-4" style="border-radius: 10px">Sign in</v-btn>
       <v-btn outlined class="ml-4" style="border-radius: 10px">Create Account</v-btn
       >
-      <v-btn
+      <!-- <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
         text
       >
         <span class="mr-2">About Us</span>
         <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
   </div>
 </template>

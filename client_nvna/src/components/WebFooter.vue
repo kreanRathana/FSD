@@ -33,6 +33,8 @@
           label="Email"
           placeholder="Enter Your Email"
           outlined
+          solo-inverted
+          dark
         ></v-text-field>
         <v-btn rounded color="primary white--text pa-5"> Subscribe </v-btn>
         <p></p>
