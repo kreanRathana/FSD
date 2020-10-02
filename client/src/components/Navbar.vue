@@ -15,12 +15,12 @@
           </a>
         </v-avatar>
       </div>
-      <form action="#">
+
+      <form action="/action_page.php">
         <select
           id="cars"
           name="cars"
           style="
-            color:white;
             border-radius: 10px 0px 0px 10px;
             padding: 8px;
             background-color: #5c6788;

@@ -5,27 +5,27 @@
     <Navbar/>
     <ImageSlide/>
     <FooterWeb/>
-    <FileUpload/> -->
-
   </v-app>
 </template>
 
 <script>
-// import FileUpload from './components/FileUpload'
-// import FooterWeb from './components/WebFooter'
-// import ImageSlide from './components/ImageSlider';
-// import Navbar from './components/Navbar'
-// import CategoryPlace from './components/CategoriesPlace'
+import FooterWeb from './components/WebFooter'
+import Footer from './components/Footer'
+import ImageSlide from './components/ImageSlider';
+import Navbar from './components/Navbar'
+import CategoryPlace from './components/CategoriesPlace'
+import contentLayout from './components/contentLayout'
 export default {
   name: 'App',
 
-  // components: {
-  //   FileUpload,
-  //   FooterWeb,
-  //   ImageSlide,
-  //   Navbar,
-  //   CategoryPlace
-  // },
+  components: {
+    FooterWeb,
+    ImageSlide,
+    Navbar,
+    Footer,
+    CategoryPlace,
+    contentLayout
+  },
 
   data: () => ({
     //
