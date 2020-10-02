@@ -73,10 +73,30 @@
                     </v-btn>
                 </v-col>
             </v-row>
-            </v-col> 
+            </v-col>
             
         </v-row>
-        
+        <v-row>
+            <v-col cols="1">
+                 <v-avatar size="75"><v-img src="../assets/Sanon.jpg" width="100" height="100"></v-img>
+                 </v-avatar>
+            </v-col>
+            <v-col cols="10">
+                 <v-text-field
+                        class="mt-5"
+                        placeholder="Comment about this place..."
+                        outlined
+                        dense
+                    ></v-text-field>
+            </v-col>
+            <v-col cols="1" class="mt-5">
+                <v-btn
+                        color="primary"
+                        >
+                        Comment
+                    </v-btn>
+            </v-col>
+        </v-row>
     </v-container>
     <Footer/>
     </v-app>
@@ -89,25 +109,21 @@ import Footer from '../components/WebFooter'
     name: 'contentLayout',
     data(){
         return{
-            StoreDetail:{},
             moreDetialsData:{},
-            title: 'Bayon Temple',
-            location: 'Phnom Sruoch District, Kampong Speu Province',
-            texts: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.',
             reviews: [
                 {
                     id: 1,
                     userName: 'Sopha',
                     userPic: '../assets/user.jpg',
                     rateStar: '4.5',
-                    reviewText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                    reviewText: 'It is a good place for visit:)',
                 },
                 {
                     id: 2,
                     userName: 'Random Person2',
                     userPic: '../assets/user.jpg',
                     rateStar: '4.5',
-                    reviewText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                    reviewText: 'I love this Place so much',
                     
                 },
                 {
