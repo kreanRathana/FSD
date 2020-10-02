@@ -28,8 +28,8 @@
                       <p style="color:gray;font-family: 'Lucida Console', Courier, monospace;">{{i.address}}</p>
                     </div>
                     <span>
-                      {{i.description}} 
-                      ...<a href=""> <router-link :to="{ name: 'detaillayout',params: { moreDetail: i}}">See all</router-link></a>
+                   <p style="text-align: justify;">  {{i.description}} ...<a href=""> <router-link :to="{ name: 'detaillayout',params: { moreDetail: i}}">See all</router-link></a></p>
+                      
                       
                       </span>  
                    
