@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="green lighten-1 white--text mt-2" padless >
+  <v-footer class="lighten-1 white--text mt-2" style="background-color:#51ADCF" padless >
     <v-row class="pt-1" no-gutters>
       <v-col class="pl-10" cols="12" sm="4">
         <a href="#"
@@ -37,7 +37,7 @@
         <v-btn rounded color="primary white--text pa-5"> Subscribe </v-btn>
         <p></p>
       </v-col>
-      <v-col class="green py-4 text-center white--text" cols="12">
+      <v-col class="py-4 text-center white--text" style="background-color:#51ADCF" cols="12">
         {{ "CopyRight@"+ new Date().getFullYear() }} — <strong>TvNa.com.kh</strong>
       </v-col>
     </v-row>

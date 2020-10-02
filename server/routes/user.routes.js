@@ -41,7 +41,7 @@ router.post('/file-upload', upload.array('files', 10), (req, res, next) => {
 
   const user = new User({ 
     _id: new mongoose.Types.ObjectId(),
-    files: reqFiles[0],
+    files: reqFiles,
     place_name:obj.place_name,
     address: obj.address,
     header: obj.header,
