@@ -22,19 +22,9 @@
 
         <!-- For the Image at the center of the page -->
         <v-row class="mt-5" >
-            <v-col md="4" v-for="(item,index) in moreDetialsData.files" :key="index">
+            <v-col cols="4" v-for="(item,index) in moreDetialsData.files" :key="index">
                 <v-img :src="item" class="image-size"></v-img>
             </v-col>
-            <!-- {{moreDetialsData.files}} -->
-            <!-- <p v-for="(index,item) in moreDetialsData.files" :key="index">
-                {{item}}
-            </p> -->
-            <!-- <v-col md="4">
-                <v-img src="../assets/bayon.jpg" class="image-size"></v-img>
-            </v-col>
-            <v-col md="4">
-                <v-img src="../assets/bayon.jpg" class="image-size"></v-img>
-            </v-col> -->
         </v-row>
 
         <!-- The second centent -->
@@ -60,12 +50,33 @@
                     dense
                     half-increments
                     size="19"
-            ></v-rating></v-row>
+            ></v-rating>
+            </v-row>
 
             <!-- user review text -->
-                <v-row><span><p>{{review.reviewText}}</p></span></v-row>
+                <v-row><span><p>{{review.reviewText}}</p></span>
+                </v-row>
+            <v-row>
+                <v-col cols="4">
+                    <v-text-field
+                        placeholder="Reply a comment..."
+                        outlined
+                        dense
+                    ></v-text-field>
+                    
+                </v-col>
+                <v-col cols="1">
+                    <v-btn
+                        color="primary"
+                        >
+                        Reply
+                    </v-btn>
+                </v-col>
+            </v-row>
             </v-col> 
+            
         </v-row>
+        
     </v-container>
     <Footer/>
     </v-app>
@@ -86,7 +97,7 @@ import Footer from '../components/WebFooter'
             reviews: [
                 {
                     id: 1,
-                    userName: 'Random Person1',
+                    userName: 'Sopha',
                     userPic: '../assets/user.jpg',
                     rateStar: '4.5',
                     reviewText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
