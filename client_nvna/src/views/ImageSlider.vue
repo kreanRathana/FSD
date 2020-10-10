@@ -43,14 +43,17 @@
       </v-img>
     </v-carousel-item>
   </v-carousel>
+  <CategoriesPlace/>
   <Footer/>
   </div>
 </template>
 <script>
+import CategoriesPlace from '../views/CategoriesPlace'
 import Navbar from '../components/Navbar'
 import Footer from '../components/WebFooter'
   export default {
     components:{
+      CategoriesPlace,
        Navbar,
        Footer
     },
